@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7efc7d1441.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title> </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        
+
+        <div class="carritoyuser">
+            <span class="iconify" data-icon="mdi:cart" data-width="50" data-height="50"></span>
+            <span class="iconify" data-icon="mdi:account" data-width="50" data-height="50"></span>
+        </div>
+
+        <form action="">
+            <input type="search" required>
+            <i class="fa fa-search"></i>
+        </form>
+
+    </header>
+
+
+
+    <!-- Inicio del Contenedor -->
+
+
+    <div id="contenedor">
+
+        <!-- Sub-Menú abajo del Header -->
+
+        <div id="menubajo">
+        <nav>
+            <ul class="menu">
+                <li class="menu_boton"><a href="#">Armá tu PC</a></li>
+                <li class="menu_boton"><a href="#">PC Armadas</a></li>
+                <li class="menu_boton"><a href="#">Periféricos</a></li>
+                <li class="menu_boton"><a href="#">Notebooks</a></li>
+                <li class="menu_boton"><a href="#">Monitores</a></li>
+                <li class="menu_boton"><a href="#">Componentes</a></li>
+            </nav>
+        </div>
+    
+    <!-- Inicio del Main -->
+
+    <main class="main">
+
+        <!-- Título, íconos de componentes y total gastado -->
+
+    <div id="titulo_componentes">
+
+        <h2 class="titulo">ARMÁ TU PC </h2>
+
+        <div id="botones">
+            <a href="#" onclick="mostrarComponentes('componentes', this)"><img class="boton" src="img/Mother.png" alt=""></a>
+            <a href="#" onclick="mostrarComponentes('procesadores', this)"><img class="boton" src="img/Procesador.png" alt=""></a>
+            <a href="#" onclick="mostrarComponentes('ram', this)"><img class="boton" src="img/RAM.png" alt=""></a>
+            <a href="#" onclick="mostrarComponentes('video', this)"><img class="boton" src="img/Placa de Video.png" alt=""></a>
+            <a href="#" onclick="mostrarComponentes('disco', this)"><img class="boton" src="img/Disco Duro.png" alt=""></a>
+            <a href="#" onclick="mostrarComponentes('fuente', this)"><img class="boton" src="img/Fuente.png" alt=""></a>
+            <a href="#" onclick="mostrarComponentes('gabinete', this)"><img class="boton" src="img/Gabinete.png" alt=""></a>
+            <a href="#" onclick="mostrarComponentes('monitor', this)"><img class="boton" src="img/Monitor.png" alt=""></a>
+        </div>
+        
+        <div class="totalgastadodiv">
+        </div>
+        
+    </div>
+        
+
+
+        
+    
+        <!-- Componentes -->
+
+    <div id="all-componentes">
+
+            <div id="componentes" class="row step1">
+            </div>
+
+    
+            <div id="procesadores" class="row step2 hidden">
+            </div>
+    
+    
+            <div id="ram" class="row step3 hidden">
+            </div>
+    
+    
+            <div id="video" class="row step4 hidden">
+            </div> 
+
+
+            <div id="disco" class="row step5 hidden">
+            </div>
+
+    
+            <div id="fuente" class="row step6 hidden">
+            </div> 
+
+
+            <div id="gabinete" class="row step7 hidden">
+            </div>
+
+    
+            <div id="monitor" class="row step8 hidden">
+            </div> 
+
+    </div>
+
+
+     </div>
+      <!-- Carrito -->
+    <div id="carrito-section">
+      <h1 class="titulo-carrito">CARRITO</h1>
+        <div id="carrito-contenedor">
+                </div>
+    </div>
+
+
+
+
+</main>
+
+<!-- Fin del Main -->
+
+    </div>
+
+    <!-- Fin del Contenedor -->
+
+
+    <div class="container-fluid"> <output class="bg-white shadow-sm">
+        <footer class="section-footer border-top">
+            <div class="container-fluid">
+                <section class="footer-top padding-y">
+                    <div class="row">
+                        <aside class="col-md-4">
+                            <article class="mr-3"> <img src="img/LogoAzul.png" class="logo-footer">
+                                <p class="mt-3 description">IMPORTANTE: Todas las imágenes de los productos son sólo a modo ilustrativo y pueden diferir del artículo en stock. Los precios indicados tienen IVA incluído y pueden sufrir variaciones sin previo aviso. Disponibilidad sujeta a stock.</p>
+                                <div> <a class="btn btn-icon btn-light" title="Facebook" target="_blank" href="#" data-abc="true"><i class="fab fa-facebook-f"></i></a> <a class="btn btn-icon btn-light" title="Instagram" target="_blank" href="#" data-abc="true"><i class="fab fa-instagram"></i></a> <a class="btn btn-icon btn-light" title="Youtube" target="_blank" href="#" data-abc="true"><i class="fab fa-youtube"></i></a> <a class="btn btn-icon btn-light" title="Twitter" target="_blank" href="#" data-abc="true"><i class="fab fa-twitter"></i></a> </div>
+                            </article>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2">
+                            <h6 class="title">Nosotros</h6>
+                            <ul class="list-unstyled">
+                                <li> <a href="#" data-abc="true">Sobre Nosotros</a></li>
+                                <li> <a href="#" data-abc="true">Terminos y Condiciones</a></li>                            </ul>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2">
+                            <h6 class="title">Servicios</h6>
+                            <ul class="list-unstyled">
+                                <li> <a href="#" data-abc="true">Atención</a></li>
+                                <li> <a href="#" data-abc="true">Reembolsos</a></li>
+                                <li> <a href="#" data-abc="true">Términos y Políticas</a></li>                            </ul>
+                        </aside>
+                        <aside class="col-sm-3 col-md-2">
+                            <h6 class="title">Usuarios</h6>
+                            <ul class="list-unstyled">
+                                <li> <a href="#" data-abc="true"> Inicio de Sesión </a></li>
+                                <li> <a href="#" data-abc="true"> Registro </a></li>
+                                <li> <a href="#" data-abc="true"> Ajustes de Cuenta </a></li>
+                                <li> <a href="#" data-abc="true"> carrito-contenedor </a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+            <section class="footer-copyright border-top">
+                <p class="float-left text-muted"> © 2022 Lazarec All rights reserved </p>
+                <p target="_blank" class="float-right text-muted"> <a href="#" data-abc="true"> Privacidad &amp; Cookies</a> &nbsp; &nbsp; <a href="#" data-abc="true">Accesibilidad</a> </p>
+            </section>
+        </footer>
+    </output> </div>
+    
+<script src="index.js"></script>
+</body>
+
+</html>
