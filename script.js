@@ -1,3 +1,13 @@
+document.getElementById('button1').addEventListener('click', () => {
+    swal({
+        title: "Bienvenido a Hard Computers"
+      }
+      )
+})
+
+
+
+
 // Selectores
 const contenedorallcomponentes = document.getElementById('all-componentes')
 const contenedorcomponentes = document.getElementById('componentes')
