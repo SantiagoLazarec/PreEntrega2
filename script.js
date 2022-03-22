@@ -1,3 +1,5 @@
+
+
 document.getElementById('button1').addEventListener('click', () => {
     swal({
         title: "Bienvenido a Hard Computers"
@@ -5,7 +7,22 @@ document.getElementById('button1').addEventListener('click', () => {
       )
 })
 
+let divDolar = document.getElementById('DivDolar')
 
+fetch("https://criptoya.com/api/dolar")
+.then(response => response.json())
+.then (data => {
+  let {blue, oficial, ccl, mep, ccb, solidario} = data
+
+  divDolar.innerHTML = `
+    <p> Oficial: $${oficial} </p>
+    <p> Solidario: $${solidario} </p>
+    <p> Blue: $${blue} </p>
+    <p> CCL: $${ccl} </p>
+    <p> MEP: $${mep} </p>
+    <p> CCB: $${ccb} </p>
+  ` 
+})
 
 
 // Selectores
